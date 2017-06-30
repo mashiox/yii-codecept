@@ -3,13 +3,13 @@ Run make, dude.
 ```bash
 make
 ```
-Run make again to make it go.
+Run this script again to make it go.
 
 ```bash
-make mount
+./mount.sh
 ```
 
-I'm not smart enough to do the next part, shelling in, in make
+Now you can shell in.
 ```bash
 ./start.sh
 ```

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e36f038c14ffe2cbb29f1e4bf1d5b378",
+    "content-hash": "f34197f578d6d01e1d1e2150f28f12a8",
     "packages": [
         {
             "name": "behat/gherkin",
@@ -158,6 +158,28 @@
                 "unit testing"
             ],
             "time": "2017-06-02T00:22:30+00:00"
+        },
+        {
+            "name": "codeception/yii-bridge",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lubobill1990/codeception-yii-bridge.git",
+                "reference": "a5841d6cd523835d31f6f0f11e381283440ee3f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lubobill1990/codeception-yii-bridge/zipball/a5841d6cd523835d31f6f0f11e381283440ee3f5",
+                "reference": "a5841d6cd523835d31f6f0f11e381283440ee3f5",
+                "shasum": ""
+            },
+            "type": "package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "YiiBridge extension",
+            "time": "2014-11-17 18:04:01"
         },
         {
             "name": "doctrine/instantiator",
@@ -2454,7 +2476,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "codeception/yii-bridge": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
