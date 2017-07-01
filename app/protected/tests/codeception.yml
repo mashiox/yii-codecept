@@ -18,8 +18,8 @@ settings:
 modules:
     enabled: [Yii1]
     config:
-        # PhpBrowser:
-        #     url: http://localhost:8234/test.php
+        PhpBrowser:
+            url: http://localhost:8234/test.php
         Yii1:
             appPath: /opt/snafu/test.php
             url: http://localhost/test.php

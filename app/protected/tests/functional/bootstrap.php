@@ -1,1 +1,0 @@
-/opt/snafu/protected/tests/bootstrap.php
