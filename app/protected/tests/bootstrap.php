@@ -10,4 +10,4 @@ $yiit2=dirname(__FILE__)."/../../vendor/codeception/yii-bridge/yiit.php";
 require_once($yiit2);
 require_once(dirname(__FILE__).'/WebTestCase.php');
 
-Yii::createWebApplication($config);
+// Yii::createWebApplication($config);

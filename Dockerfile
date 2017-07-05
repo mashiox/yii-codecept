@@ -33,7 +33,8 @@ RUN ./composer require yiisoft/yii codeception/codeception && \
     ./composer update
     # ./composer require codeception/yii-bridge && \
 
-RUN echo 'alias ll="ls -la --color=auto"' >> ~/.bashrc
+RUN echo 'alias ll="ls -la --color=auto"' >> ~/.bashrc && \
+    echo 'alias codecept="/opt/snafu/vendor/codeception/codeception/codecept"' >> ~/.bashrc
 
 RUN chown www-data:www-data -R ./
 
