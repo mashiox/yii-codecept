@@ -8,8 +8,9 @@
 actor: FunctionalTester
 modules:
     enabled:
+        - PhpBrowser:
         - Yii1:
-            appPath: '/opt/snafu/index.php'
-            url: 'http://localhost/index.php'
+            appPath: '/opt/snafu/test.php'
+            url: 'http://localhost/test.php'
             part: init
         - \Helper\Functional

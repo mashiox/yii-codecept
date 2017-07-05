@@ -2,6 +2,9 @@
     "require": {
         "yiisoft/yii": "^1.1",
         "codeception/codeception": "^2.3",
-        "codeception/yii-bridge": "dev-master"
+        "codeception/yii-bridge": "dev-master",
+        "phpunit/phpunit-selenium": "^1.4.2",
+        "codeception/specify": "^0.4.6",
+        "codeception/verify": "^0.3.3"
     }
 }
