@@ -3,7 +3,7 @@
 
 class FirstCest
 {
-    // use Codeception\Specify;
+    use Codeception\Specify;
     
     private $adminEamil;
 
