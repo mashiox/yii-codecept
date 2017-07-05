@@ -1,11 +1,11 @@
 <?php
 
 
-class FirstCest
+class FirstCest extends \Codeception\Test\Unit
 {
     use Codeception\Specify;
     
-    private $adminEamil;
+    private $adminEmail;
 
     public function _before(UnitTester $I)
     {
