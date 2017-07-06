@@ -4,16 +4,16 @@
 class FirstCest extends \Codeception\Test\Unit
 {
     use Codeception\Specify;
-    
+
     private $adminEmail;
 
-    public function _before(UnitTester $I)
-    {
-    }
+    // public function _before(UnitTester $I)
+    // {
+    // }
 
-    public function _after(UnitTester $I)
-    {
-    }
+    // public function _after(UnitTester $I)
+    // {
+    // }
 
     // tests
     public function testAdminEmailParam()
@@ -25,7 +25,8 @@ class FirstCest extends \Codeception\Test\Unit
         });
 
         $this->specify("adminEmail is in email format", function(){
-            $this->assertTrue(filter_var($this->adminEmail, FILTER_VALIDATE_EMAIL));
+            // $this->assertTrue(filter_var($this->adminEmail, FILTER_VALIDATE_EMAIL) !== false);
+            verify(filter_var($this->adminEmail, FILTER_VALIDATE_EMAIL))->notEquals(false);
         });
     }
 }
