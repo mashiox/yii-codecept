@@ -1,0 +1,18 @@
+version: '3'
+services:
+  web:
+    volumes:
+      - "/home/mwalther/projects/yii-codecept/tests/codeception/suites/functional.suite.yml:/opt/app/protected/tests/suites/functional.suite.yml"
+      - "/home/mwalther/projects/yii-codecept/tests/codeception/codeception.yml:/opt/app/protected/tests/codeception.yml"
+      - "/home/mwalther/projects/yii-codecept/src/protected/config/test.php:/opt/app/protected/config/test.php"
+      - "/home/mwalther/projects/yii-codecept/tests/test.php:/opt/app/test.php"
+      - "/home/mwalther/projects/yii-codecept/tests/codeception/bootstrap.php:/opt/app/protected/tests/bootstrap.php"
+    image: mashiox/yii-testing-app
+    ports:
+      - 8001:80
+    networks:
+      - web-stack
+    command: "bash -x /opt/app/bin/test.sh"
+    # command: "tail -f /opt/app/composer.json"
+networks:
+  web-stack:
